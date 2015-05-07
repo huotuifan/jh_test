@@ -1,0 +1,48 @@
+.nm-Favorites-add,
+.nm-Favorites-remove {
+    width: 0;
+}
+
+.nm-Head-inner,
+.nm-Slider-inner,
+.nm-Content-inner,
+.nm-Footer-inner {
+    width: 86%;
+}
+
+.nm-Search {
+    position: absolute;
+    z-index: 10;
+    width: 60%;
+    left: 20%;
+    top: 62px;
+    margin: 0;
+}
+
+.nm-Links-container {
+    width: 400px;
+}
+
+.nm-Post {
+    padding-bottom: 10px;
+}
+
+.nm-Post-column {
+    margin-right: 0;
+    min-height: 0;
+}
+
+.nm-Post-info {
+    position: relative;
+    top: auto;
+    right: auto;
+    width: auto;
+    padding: 10px 0 0 5px;
+    overflow: auto;
+}
+
+.nm-Post-info li {
+    float: left;
+    margin-right: 20px;
+}
+

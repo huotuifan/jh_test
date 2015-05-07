@@ -1,0 +1,455 @@
+@import "form.css";
+@import "ui.css";
+@import "post.css";
+@import "user.css";
+@import "place.css";
+@import "admin.css";
+
+body {
+    margin: 0;
+    padding: 0;
+    font: 12px Helvetica, Arial, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: #4d4d4d;
+}
+
+a {
+    color: #4a95c2;
+}
+
+a img {
+    border: none;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 0;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+.nm-Wrapper {
+    min-height: 100%;
+    margin: 0 auto -4em;
+}
+
+.nm-Push {
+    height: 4em;
+}
+
+.nm-Footer {
+    height: 4em;
+}
+
+.nm-Head-inner,
+.nm-Slider-inner,
+.nm-Content-inner,
+.nm-Footer-inner {
+    margin: 0 auto;
+    min-width: 240px;
+}
+
+.nm-Head {
+    padding-top: 10px;
+}
+
+.nm-Head-inner {
+    position: relative;
+    height: 50px;
+}
+
+.nm-Footer-copy {
+    color: #686868;
+}
+
+.nm-Footer-copy a {
+    color: #686868;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nm-Footer-menu {
+    float: right;
+    color: #e2e4e4;
+}
+
+.nm-Footer-menu a {
+    color: #231f20;
+}
+
+.nm-Footer-menu ul,
+.nm-Footer-menu li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nm-Footer-menu ul {
+    margin-right: -10px;
+}
+
+.nm-Footer-menu li {
+    float: left;
+    padding: 0 10px 0 0;
+}
+
+.nm-Footer-menu li:before {
+    content: "|";
+    padding-right: 10px;
+}
+
+.nm-Footer-menu li:first-child:before {
+    content: none;
+}
+
+.nm-Footer-inner {
+    padding: 1em 0 2em;
+}
+
+.nm-Content-empty {
+    padding: 40px 0 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.nm-Content {
+    background: #fff;
+    min-height: 200px;
+    padding-bottom: 4em;
+    overflow: auto;
+}
+
+.nm-Content-inner {
+
+}
+
+.nm-Content-filterWrapper {
+    padding: 10px 0;
+}
+
+.nm-Content-filter {
+    margin: 0 auto;
+}
+
+.nm-Content-filter td {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.nm-Content-filter a {
+    display: inline-block;
+    padding: 6px 20px;
+}
+
+.nm-Content-filter a {
+    color: #d00;
+}
+
+.nm-Content-filterSelected {
+    background: #7CA6BF;
+    color: #fff !important;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.nm-Map {
+    position: relative;
+}
+
+.nm-Map-container {
+    background: #eef2f4;
+}
+
+.nm-Map-line {
+    background: #b0c7d2;
+    height: 6px;
+    -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 1;
+}
+
+.nm-Map-bottomLine {
+    background: #b0c7d2;
+    height: 6px;
+    -webkit-box-shadow: 0 -2px 2px 0 rgba(0, 0, 0, 0.14);
+    box-shadow: 0 -2px 2px 0 rgba(0, 0, 0, 0.14);
+    position: relative;
+    z-index: 1;
+}
+
+.nm-Slider {
+    cursor: row-resize;
+    background: #fff;
+    position: absolute;
+    width: 100%;
+    -webkit-box-shadow: 0 -2px 2px 0 rgba(0, 0, 0, 0.14);
+    box-shadow: 0 -2px 2px 0 rgba(0, 0, 0, 0.14);
+}
+
+.nm-Slider-inner {
+    position: relative;
+}
+
+.nm-Slider-label {
+    width: 70px;
+    height: 8px;
+    position: relative;
+    top: -1px;
+    left: 50%;
+    margin-left: -35px;
+    background: #b0c7d2;
+    -webkit-border-bottom-right-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.nm-Slider-line {
+    height: 7px;
+    background: #b0c7d2;
+}
+
+.nm-Head-logo {
+    position: absolute;
+}
+
+.nm-Head-logo a {
+    display: block;
+    width: 154px;
+    height: 42px;
+    background: url('/i/decor/logo.png') no-repeat;
+}
+
+.nm-Head-logo span {
+    text-indent: -9999px;
+    display: block;
+    overflow: hidden;
+}
+
+.nm-Search {
+    margin: 0 300px 0 260px;
+    padding-top: 8px;
+}
+
+.nm-Links-container {
+    width: 280px;
+    position: absolute;
+    top: 8px;
+    right: 0;
+}
+
+.nm-Search-input {
+    width: 100%;
+    padding-left: 30px !important;
+    background: #fff url("../i/decor/location-gray.png") no-repeat 8px 50% !important;
+    font-style: italic;
+    border-color: #a0a0a0 !important;
+}
+
+.nm-Search-input:focus {
+    border-color: #707070 !important;
+}
+
+.nm-Form-Post-row {
+    padding-bottom: 10px;
+}
+
+.nm-Links-user {
+    margin-top: 8px;
+    text-align: right;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.nm-Links-user a {
+    color: #4d4d4d;
+}
+
+.nm-Links-logout {
+    display: block;
+    float: right;
+    cursor: pointer;
+    padding: 0 2px;
+    margin: 0 8px 0 6px;
+}
+
+.nm-Links-logout i {
+    display: block;
+    width: 22px;
+    height: 30px;
+    background: url("../i/decor/logout.png") 2px 50% no-repeat;
+}
+
+.nm-Links-logout span {
+    display: none;
+}
+
+.nm-Links-settings {
+    display: block;
+    float: right;
+    cursor: pointer;
+    padding: 0 2px;
+    margin: 0 0 0 10px;
+}
+
+.nm-Links-settings i {
+    display: block;
+    width: 22px;
+    height: 30px;
+    background: url("../i/decor/settings.png") 2px 50% no-repeat;
+}
+
+.nm-Links-settings span {
+    display: none;
+}
+
+.nm-Links-login {
+    text-align: right;
+    margin-top: -2px;
+}
+
+.nm-Links-login .nm-Link {
+    margin: 0 0 5px;
+}
+
+.nm-Links-login .nm-Link span {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.nm-Links-post {
+    position: relative;
+    display: block;
+    float: right;
+    background: #7ca6bf;
+    color: #fff;
+    padding: 0 20px 0 34px;
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+    font-size: 13px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    white-space: nowrap;
+}
+
+.nm-Links-post i {
+    background: url("../i/decor/button-add-post.png") 0 50% no-repeat;
+    display: block;
+    width: 24px;
+    height: 30px;
+    position: absolute;
+    left: 3px;
+}
+
+.nm-Favorites-add {
+    background: url("../i/decor/fav.png") 0 3px no-repeat;
+}
+
+.nm-Favorites-remove {
+    background: url("../i/decor/fav-selected.png") 0 3px no-repeat;
+}
+
+.nm-Favorites-add,
+.nm-Favorites-remove {
+    padding-left: 34px;
+    line-height: 32px;
+    text-decoration: underline;
+    font-size: 13px;
+    font-weight: bold;
+    color: #1b1a1a;
+    cursor: pointer;
+    width: 155px;
+    letter-spacing: normal;
+    overflow: hidden;
+}
+
+.nm-Map-buttons {
+    -webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px;
+    margin: 5px;
+}
+
+.nm-Map-button {
+    cursor: pointer;
+    float: left;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    color: rgb(0, 0, 0);
+    font-family: Arial, sans-serif;
+    -webkit-user-select: none;
+    font-size: 13px;
+    background-color: rgb(255, 255, 255);
+    padding: 1px 6px;
+    border: 1px solid rgb(113, 123, 135);
+    min-width: 28px;
+}
+
+.nm-Map-button:hover {
+    background: rgb(255,255,255);
+    background: -moz-linear-gradient(top, rgb(255,255,255) 0%, rgb(230,230,230) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(255,255,255)), color-stop(100%,rgb(230,230,230)));
+    background: -webkit-linear-gradient(top, rgb(255,255,255) 0%,rgb(230,230,230) 100%);
+    background: -o-linear-gradient(top, rgb(255,255,255) 0%,rgb(230,230,230) 100%);
+    background: -ms-linear-gradient(top, rgb(255,255,255) 0%,rgb(230,230,230) 100%);
+    background: linear-gradient(to bottom, rgb(255,255,255) 0%,rgb(230,230,230) 100%);
+}
+
+@media (-webkit-min-device-pixel-ratio: 2) {
+    .nm-Head-logo a {
+        background-image: url('/i/retina/logo.png');
+        background-size: contain;
+    }
+
+    .nm-Links-logout i {
+        background-image: url('/i/retina/logout.png');
+        background-size: 18px 18px;
+    }
+
+    .nm-Search-input {
+        background-image: url('/i/retina/location-gray.png') !important;
+        background-size: 16px 20px !important;
+    }
+
+    .nm-Links-post i {
+        background-image: url('../i/retina/button-add-post.png');
+        background-size: contain;
+    }
+}
+
+.nm-Message-container {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.nm-Pages-Links-container {
+    margin: 0 auto 10px;
+    display: table;
+}
+
+.nm-Pages-Links-container .nm-Pages-Links-arrow {
+    text-decoration: none;
+    font-size: 13px;
+}

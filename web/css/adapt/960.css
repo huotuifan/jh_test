@@ -1,0 +1,10 @@
+.nm-Head-inner,
+.nm-Slider-inner,
+.nm-Content-inner,
+.nm-Footer-inner {
+    width: 80%;
+}
+
+.nm-Search {
+    margin-left: 220px;
+}

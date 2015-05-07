@@ -1,0 +1,25 @@
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule . /index.php [L]
+</IfModule>
+
+#AddOutputFilterByType DEFLATE text/plain
+#AddOutputFilterByType DEFLATE text/html
+#AddOutputFilterByType DEFLATE text/css
+#AddOutputFilterByType DEFLATE application/javascript
+#AddOutputFilterByType DEFLATE application/x-javascript
+
+<FilesMatch "\.(mp3|swf|gif|jpg|jpeg|png|ico|js|css)$">
+#    Header set Cache-Control "public, max-age=31536000"
+#    Header set Expires "Wed, 15 Apr 2020 20:00:00 GMT"
+#    Header unset Last-Modified
+    Header set Cache-Control "no-cache, must-revalidate"
+    Header set Expires "Sat, 26 Jul 1997 05:00:00 GMT"
+    Header unset Last-Modified
+</FilesMatch>

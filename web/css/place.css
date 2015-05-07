@@ -1,0 +1,123 @@
+.nm-Place-title {
+    padding: 40px 0 30px;
+    margin: 0;
+    font-size: 36px;
+    color: #231F20;
+    letter-spacing: -0.056em;
+}
+
+.nm-Place-title .nm-Favorites-add,
+.nm-Place-title .nm-Favorites-remove {
+    float: right;
+    margin-top: 6px;
+}
+
+.nm-Place-editButton, .nm-Place-deleteButton {
+    text-decoration: underline;
+    font-size: 13px;
+    font-weight: bold;
+    color: #f1231b;
+    cursor: pointer;
+    letter-spacing: normal;
+    overflow: hidden;
+    vertical-align: super;
+}
+
+.nm-Place-left {
+    margin-right: 350px;
+}
+
+.nm-Place-right {
+    float: right;
+    width: 320px;
+    background: #f7f7f7;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    overflow: auto;
+}
+
+.nm-Place-right {
+    margin-top: 35px;
+}
+
+.nm-Place-about {
+    padding: 18px;
+}
+
+.nm-Place-about h2 {
+    margin: 0
+}
+
+.nm-Place-aboutText, .nm-Place-wiki {
+    font-style: italic;
+    color: #737578;
+    margin: 10px 0 0 0;
+}
+
+.nm-Place-wiki {
+    background: url("../i/decor/wiki.png") 0 0 no-repeat;
+    font-style: normal;
+    padding: 0 0 2px 26px;
+}
+
+.nm-Place-wiki a {
+    color: #000;
+}
+
+.nm-Event {
+    padding: 0 0 10px;
+    border-bottom: 1px solid #e1e1e1;
+    margin-bottom: 10px;
+}
+
+.nm-Event:last-child {
+    border-bottom: none;
+}
+
+.nm-Event-title {
+    padding-left: 27px;
+    background: url("../i/decor/meta-calendar.png") 0 1px no-repeat;
+    height: 20px;
+    line-height: 20px;
+}
+
+.nm-Event-title a {
+    color: #f1231b;
+    font-weight: bold;
+}
+
+.nm-Event-content {
+    color: #737578;
+    padding: 6px 0;
+}
+
+.nm-Event-info {
+    overflow: auto;
+}
+
+.nm-Event-info ul,
+.nm-Event-info li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nm-Event-info li {
+    float: left;
+    margin-right: 20px;
+}
+
+.nm-Event-info a {
+    padding: 5px 0 5px 27px;
+    display: inline-block;
+    color: black;
+}
+
+.nm-Event-person a {
+    background: url("../i/decor/meta-person.png") 0 50% no-repeat;
+}
+
+.nm-Event-comments a {
+    background: url("../i/decor/meta-comments.png") 0 50% no-repeat;
+}

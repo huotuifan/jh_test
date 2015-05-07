@@ -1,0 +1,43 @@
+.nm-Pending-Post-container {
+    margin: 20px auto;
+}
+
+.nm-Pending-Post-container td, .nm-Pending-Post-container th {
+    padding: 4px 8px;
+}
+
+.nm-Pending-Post-container th {
+    background: #7ca6bf;
+    color: #fff;
+    padding: 8px;
+}
+
+.nm-Pending-Post-container td {
+    padding: 4px 6px;
+    border-bottom: 1px solid #BFDCEC;
+}
+
+.nm-Pending-Post-container td:last-child {
+    border-bottom: none;
+}
+
+.nm-Pending-Post-container .nm-Post-tags {
+    list-style: none;
+    padding: 5px 0;
+    font-size: 11px;
+}
+
+.nm-Pending-Post-row .button-accept-post {
+    display: inline-block;
+    background: url("../i/decor/tick-button.png") no-repeat;
+    width: 16px;
+    height: 16px;
+}
+
+.nm-Pending-Post-row .button-decline-post {
+    display: inline-block;
+    margin-top: 2px;
+    background: url("../i/decor/cross-button.png") no-repeat;
+    width: 16px;
+    height: 16px;
+}
